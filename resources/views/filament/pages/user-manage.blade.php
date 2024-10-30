@@ -18,7 +18,7 @@
                     <td class="px-4 py-2 border">{{ $user->email }}</td>
                     <td class="px-4 py-2 border">{{ $user->created_at->format('Y-m-d') }}</td>
                     <td class="px-4 py-2 border">
-                        <form action="../user-delete" method="POST">
+                        <form action="{{route('user.delete')}}" method="POST">
                             @csrf
                             <input type="hidden" name="id" value="{{$user->id}}">
                             <button 

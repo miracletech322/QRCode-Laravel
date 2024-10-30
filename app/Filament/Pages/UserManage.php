@@ -16,9 +16,4 @@ class UserManage extends Page
     {
         return User::all();
     }
-    public function deleteuser($id)
-    {
-        dd('Are you sure you want to delete this user?');
-        return "success";
-    }
 }
